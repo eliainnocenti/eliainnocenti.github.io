@@ -1,0 +1,43 @@
+/********************************************
+HEADER - MAIN
+********************************************/
+
+#main-title {
+    text-align: center;
+}
+
+/********************************************
+CANVAS - MAIN
+********************************************/
+
+#wump-game{
+    margin: 6vmin auto;
+    display: block;
+    width: 77vmin;
+    height: 77vmin;
+    background: white;
+    position: relative;
+}
+
+#background-rndr,
+#foreground-rndr,
+#midground-rndr,
+#fog-rndr{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    image-rendering: pixelated;
+}
+
+#opening {
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    /*change this along with main.js code to use transition*/
+/*    display: none;*/
+}

@@ -1,0 +1,114 @@
+/* MAIN CONTENT */
+#content{
+    width: 100vmin;
+    height: 50vmin;
+    margin: 0 auto;
+    margin-top: 25vmin;
+    font-size: 2vmin;
+}
+
+/********************************************
+HEADER - LANDING 
+********************************************/
+
+#landing-title {
+    margin-bottom: 6vmin;
+}
+
+/********************************************
+SECTION - LANDING 
+********************************************/
+input#button-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 2vmin 6vmin;
+    border: .35vmin solid #e58239;
+    margin: 1vmin auto 0;
+    cursor: pointer;
+    transition: .1s ease;
+    font-size: 3vmin;
+}
+
+/*
+input#button-btn:hover {
+    transition: 3s ease-out;
+    padding: 2vmin 18vmin;
+}
+*/
+
+input#button-btn:focus {
+    outline: none;
+}
+
+/* ... */
+
+h1 {
+    letter-spacing: 1vmin;
+    border-bottom: .35vmin solid #e58239;
+    width: 42%;
+    display: block;
+    margin: 0 auto;
+    padding: 1vmin;
+    text-align: center;
+}
+
+h2,
+input {
+    font-weight: 700;
+    letter-spacing: .65vmin;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 3vmin;
+    letter-spacing: .4vmin;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+section{
+    max-width: 1080px;
+    padding: 2vmin;
+    margin: 0 auto; 
+}
+
+/* TOP, BOT CLOSING ANIMATION */
+
+#top-closein, #bot-closein{
+    background: white;
+    width: 100vw;
+    height: 50vh;
+    transition: 3s ease-in-out;
+    position: fixed;
+}
+
+#top-closein{
+    top: -50vh;
+}
+
+#bot-closein{
+    bottom: -50vh;
+}
+
+/********************************************
+LANDING FOOTER
+********************************************/
+
+#g-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2.5vmin;
+}
+
+#g-footer p {
+    letter-spacing: .25vmin;
+    font-weight: 700;
+}

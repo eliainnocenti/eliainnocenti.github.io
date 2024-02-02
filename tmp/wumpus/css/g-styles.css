@@ -1,0 +1,21 @@
+/********************************************
+STYLING NOTES
+********************************************/
+
+/*
+
+    To keep all pixel art concistent the width and height
+    of any pixel images should be calculated as follows...
+
+    1 pxl (width and height) = .25vmin
+
+*/
+
+/********************************************
+GLOBAL STYLES
+********************************************/
+
+* {padding: 0; margin: 0; box-sizing: border-box; color: white; box-sizing: border-box; font-family: 'Roboto Mono'; font-weight: 400; background: #080845}
+
+
+
