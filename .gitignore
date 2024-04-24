@@ -1,5 +1,7 @@
+# Directories
 /.idea/
 
+# Mac Files
 .DS_Store
 projects/.DS_Store
 projects/my-ts-react-webpack-app/.DS_Store
