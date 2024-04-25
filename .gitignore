@@ -7,4 +7,4 @@ projects/.DS_Store
 projects/my-ts-react-webpack-app/.DS_Store
 
 # Tools
-.update_nypost.sh
+/.update/
