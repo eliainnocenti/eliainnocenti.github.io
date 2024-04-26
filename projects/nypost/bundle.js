@@ -46,14 +46,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/style.scss */ "./src/style/style.scss");
 
 
+// components
+
+
+// styles
 
 var Header = function Header() {
   return (
     /*#__PURE__*/
-    // TODO: do I need ot wrap this in a <header> tag?
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "header"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_header_HeaderWrapper__WEBPACK_IMPORTED_MODULE_1__["default"], null)))
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
+      id: "masthead",
+      className: "site-header headroom headroom--not-bottom headroom--pinned headroom--top",
+      role: "banner",
+      "data-component": "siteHeader"
+    }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_header_HeaderWrapper__WEBPACK_IMPORTED_MODULE_1__["default"], null), " "))
   );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
@@ -282,13 +289,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../style/style.scss */ "./src/style/style.scss");
 
 
+// components
 
 
+
+
+// styles
 
 var HeaderContainer = function HeaderContainer() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderLeft__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderLogo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderRight__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header__container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderLeft__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderLogo__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderRight__WEBPACK_IMPORTED_MODULE_3__["default"], null)))
+  );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderContainer);
 
@@ -309,10 +324,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../style/style.scss */ "./src/style/style.scss");
 
 
+// styles
+
 var HeaderLeft = function HeaderLeft() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header-left"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " | This is the header left | "));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header__left"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "menu-toggle",
+      "aria-controls": "menu-main-menu",
+      "aria-expanded": "false"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+      className: "site-header__nav",
+      role: "navigation"
+    }, "::before", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header__nav-inner"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      id: "membership-login-container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "button button--login",
+      type: "button"
+    }, "::before", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "button__text"
+    }, "Log In")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "site-header__search-toggle",
+      "aria-controls": "search-input-header",
+      "aria-expanded": "false",
+      "data-search-header": "toggle",
+      "data-ga-event": " {\"category\":\"Top Nav\",\"action\":\"Search\"}\t\t\t\t\t\t",
+      "data-ga4-event": " {\"event_name\":\"ux_engagement\",\"source_unit\":\"Top Nav\",\"source_position\":\"Search\"}\t\t\t\t\t\t"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "screen-reader-text"
+    }, "Search")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://email.nypost.com/",
+      className: "site-header__email",
+      "data-ga-event": " {\"category\":\"Top Nav\",\"action\":\"Email Sign Up\"}\t\t\t\t\t\t",
+      "data-ga4-event": " {\"event_name\":\"ux_engagement\",\"source_unit\":\"Top Nav\",\"source_position\":\"Email Sign Up\"}\t"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "site-header__email-icon"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "screen-reader-text"
+    }, "Email")))
+  );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderLeft);
 
@@ -333,10 +388,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../style/style.scss */ "./src/style/style.scss");
 
 
+// styles
+
 var HeaderLogo = function HeaderLogo() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header-logo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " | This is the header logo | "));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header__logo"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: "https://nypost.com",
+      "data-ga-event": " {\"category\":\"Top Nav\",\"action\":\"New York Post\"}\t\t\t\t\t",
+      "data-ga4-event": " {\"event_name\":\"ux_engagement\",\"source_unit\":\"Top Nav\",\"source_position\":\"New York Post\"}\t\t\t\t\t"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "screen-reader-text"
+    }, "New York Post"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
+      "aria-hidden": "true",
+      width: "450",
+      height: "67",
+      viewBox: "0 0 450 67"
+    }, " ")))
+  );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderLogo);
 
@@ -357,10 +429,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../style/style.scss */ "./src/style/style.scss");
 
 
+// styles
+
 var HeaderRight = function HeaderRight() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header-right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, " | This is the header right | "));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header__right"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header-cta cta"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      className: "site-header-cta__link",
+      href: "https://pagesix.com/",
+      "data-ga-event": " {\"category\":\"Top Nav\",\"action\":\"Page Six Header CTA\",\"label\":\"\"}\t\t\t\t\t",
+      "data-ga4-event": " {\"event_name\":\"ux_engagement\",\"source_unit\":\"Top Nav\",\"source_position\":\"Page Six Header CTA\"}\t\t\t\t\t"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      id: "nypost-membership-header",
+      className: "nav-header nav-header--membership"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      className: "button button--login",
+      type: "button"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+      className: "button__text"
+    }, "Log In"))))
+  );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderRight);
 
@@ -384,13 +477,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../style/style.scss */ "./src/style/style.scss");
 
 
+// components
 
 
+
+
+// styles
 
 var HeaderWrapper = function HeaderWrapper() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "header-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MembershipDropdown__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SiteHeaderBar__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header__wrapper"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HeaderContainer__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MembershipDropdown__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SiteHeaderBar__WEBPACK_IMPORTED_MODULE_3__["default"], null)))
+  );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeaderWrapper);
 
@@ -414,9 +515,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var MembershipDropdown = function MembershipDropdown() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "membership-dropdown"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, " | This is the membership dropdown | "));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      id: "membership-dropdown-wrapper"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      id: "membership-dropdown-wrapper"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null)))
+  );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MembershipDropdown);
 
@@ -440,9 +547,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var SiteHeaderBar = function SiteHeaderBar() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "site-header-bar"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, " | This is the site header bar | "));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "site-header__bar"
+    })
+  );
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SiteHeaderBar);
 
@@ -462,111 +573,645 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./_style.css */ "./node_modules/css-loader/dist/cjs.js!./src/style/_style.css");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3__);
 // Imports
 
 
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjNTg1ODU4IiBkPSJNNiA0Ljg5IDEuNDYyLjI1N2EuODQyLjg0MiAwIDAgMC0xLjIxMSAwIC44OTIuODkyIDAgMCAwIDAgMS4yNDNsNS4xNCA1LjI0NWEuODQ0Ljg0NCAwIDAgMCAxLjE4My4wMjZMMTEuNzUgMS41YS44OTMuODkzIDAgMCAwIDAtMS4yMzkuODQyLjg0MiAwIDAgMC0xLjIxMSAwWiIvPjwvc3ZnPg== */ "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjNTg1ODU4IiBkPSJNNiA0Ljg5IDEuNDYyLjI1N2EuODQyLjg0MiAwIDAgMC0xLjIxMSAwIC44OTIuODkyIDAgMCAwIDAgMS4yNDNsNS4xNCA1LjI0NWEuODQ0Ljg0NCAwIDAgMCAxLjE4My4wMjZMMTEuNzUgMS41YS44OTMuODkzIDAgMCAwIDAtMS4yMzkuODQyLjg0MiAwIDAgMC0xLjIxMSAwWiIvPjwvc3ZnPg=="), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* _header.scss */
-/* Rules for Header */
-.header {
-  /* Add specific CSS rules for Header here */
-  height: 3.125rem;
+___CSS_LOADER_EXPORT___.push([module.id, `/* TODO: uncomment the following lines when implemented
+@import 'header';
+@import 'footer';
+@import 'maincontent';
+@import 'extra';
+*/
+@media (prefers-reduced-motion: no-preference) {
+  .headroom, .headroom .site-header__wrapper {
+    transition: transform 0.2s linear;
+    will-change: transform;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .site-header {
+    top: 0;
+  }
+}
+.site-header {
+  height: var(--site-header--height);
   position: sticky;
+  top: var(--wp-admin--admin-bar--height, 0);
   width: 100%;
   z-index: 9999;
-  top: 0;
 }
 
-/* Rules for HeaderWrapper */
-.header-wrapper {
-  /* Add specific CSS rules for HeaderWrapper here */
-  background: #C60800;
-  color: #ffffff;
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .headroom, .headroom .site-header__wrapper {
+    transition: transform 0.2s linear;
+    will-change: transform;
+  }
+}
+.site-header__wrapper {
+  background: var(--wp--custom--color--brand-primary);
+  color: var(--wp--custom--color--brand-primary-complement);
   position: relative;
   z-index: 299;
 }
 
-/* Rules for HeaderContainer */
-.header-container {
-  /* Add specific CSS rules for HeaderContainer here */
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.site-header__container {
   align-items: center;
   display: flex;
   padding: 0.625rem;
 }
 
-/* Rules for HeaderLeft */
-.header-left {
-  /* Add specific CSS rules for HeaderLeft here */
+.site-header__left {
   justify-content: flex-start;
   margin-right: 0.625rem;
   position: relative;
+}
+
+.site-header__left, .site-header__right {
   align-items: center;
   display: flex;
   flex: 1 0 0;
 }
 
-/* Rules for HeaderLogo */
-.header-logo {
-  /* Add specific CSS rules for HeaderLogo here */
+.menu-toggle {
+  transition: opacity 0.3s;
 }
 
-/* Rules for HeaderRight */
-.header-right {
-  /* Add specific CSS rules for HeaderRight here */
+.menu-toggle {
+  --menu-toggle-icon-foreground-color: var(--wp--preset--color--white);
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--wp--preset--color--white);
+  border-radius: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  height: 1.875rem;
+  outline: none;
+  overflow: visible;
+  padding: 0.4375rem;
+  text-decoration: none;
 }
 
-/* Rules for MembershipDropdown */
-.membership-dropdown {
-  /* Add specific CSS rules for MembershipDropdown here */
+* {
+  box-sizing: border-box;
 }
 
-/* Rules for SiteHeaderBar */
-.site-header-bar {
-  /* Add specific CSS rules for SiteHeaderBar here */
+button {
+  appearance: auto;
+  /*
+  font-style: ;
+  font-variant-ligatures: ;
+  font-variant-caps: ;
+  font-variant-numeric: ;
+  font-variant-east-asian: ;
+  font-variant-alternates: ;
+  font-variant-position: ;
+  font-weight: ;
+  font-stretch: ;
+  font-size: ;
+  font-family: ;
+  font-optical-sizing: ;
+  font-kerning: ;
+  font-feature-settings: ;
+  font-variation-settings: ;
+   */
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
 }
 
-/* _footer.scss */
-/* Rules for Footer */
-.footer {
-  /* Add specific CSS rules for Footer here */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  word-wrap: normal !important;
+  border: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
-/* Rules for FooterWrapper */
-.footer-wrapper {
-  /* Add specific CSS rules for FooterWrapper here */
+.screen-reader-text {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
-/* Rules for FooterTop */
-.footer-top {
-  /* Add specific CSS rules for FooterTop here */
+.menu-toggle__icon, .menu-toggle__icon:after, .menu-toggle__icon:before {
+  transition: background-color 0.2s ease-in-out;
 }
 
-/* Rules for FooterLogo */
-.footer-logo {
-  /* Add specific CSS rules for FooterLogo here */
+.menu-toggle__icon, .menu-toggle__icon:after, .menu-toggle__icon:before {
+  background-color: var(--menu-toggle-icon-foreground-color);
+  display: block;
+  height: 0.125rem;
+  width: 1rem;
 }
 
-/* Rules for FooterSocial */
-.footer-social {
-  /* Add specific CSS rules for FooterSocial here */
+.menu-toggle {
+  --menu-toggle-icon-foreground-color: var(--wp--preset--color--white);
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--wp--preset--color--white);
+  border-radius: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  height: 1.875rem;
+  outline: none;
+  overflow: visible;
+  padding: 0.4375rem;
+  text-decoration: none;
 }
 
-/* Rules for FooterMain */
-.footer-main {
-  /* Add specific CSS rules for FooterMain here */
+.menu-toggle__title {
+  display: none;
 }
 
-/* Rules for FooterLegal */
-.footer-legal {
-  /* Add specific CSS rules for FooterLegal here */
+.site-header__nav {
+  left: -0.8125rem;
+  top: 2.5rem;
+  width: 100vw;
+  will-change: transform, visibility;
+  z-index: 3;
 }
 
-/* _extra.scss */
-/* Rules for BackgroundSlider */
-.background-slider {
-  /* Add specific CSS rules for BackgroundSlider here */
-}`, "",{"version":3,"sources":["webpack://./src/style/_header.scss","webpack://./src/style/style.scss","webpack://./src/style/_footer.scss","webpack://./src/style/_extra.scss"],"names":[],"mappings":"AAAA,iBAAA;AAOA,qBAAA;AACA;EACE,2CAAA;EACA,gBARc;EASd,gBAAA;EACA,WAAA;EACA,aAAA;EACA,MAAA;ACLF;;ADQA,4BAAA;AACA;EACE,kDAAA;EACA,mBAhBc;EAiBd,cAhB4B;EAiB5B,kBAAA;EACA,YAAA;ACLF;;ADQA,8BAAA;AACA;EACE,oDAAA;EACA,mBAAA;EACA,aAAA;EACA,iBAAA;ACLF;;ADQA,yBAAA;AACA;EACE,+CAAA;EACA,2BAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,aAAA;EACA,WAAA;ACLF;;ADQA,yBAAA;AACA;EACE,+CAAA;ACLF;;ADQA,0BAAA;AACA;EACE,gDAAA;ACLF;;ADQA,iCAAA;AACA;EACE,uDAAA;ACLF;;ADQA,4BAAA;AACA;EACE,kDAAA;ACLF;;ACzDA,iBAAA;AAEA,qBAAA;AACA;EACE,2CAAA;AD2DF;;ACxDA,4BAAA;AACA;EACE,kDAAA;AD2DF;;ACxDA,wBAAA;AACA;EACE,8CAAA;AD2DF;;ACxDA,yBAAA;AACA;EACE,+CAAA;AD2DF;;ACxDA,2BAAA;AACA;EACE,iDAAA;AD2DF;;ACxDA,yBAAA;AACA;EACE,+CAAA;AD2DF;;ACxDA,0BAAA;AACA;EACE,gDAAA;AD2DF;;AE7FA,gBAAA;AAEA,+BAAA;AACA;EACE,qDAAA;AF+FF","sourcesContent":["/* _header.scss */\n\n$header-height: 3.125rem;\n\n$primary-color: #C60800;\n$primary-color-complementary: #ffffff;\n\n/* Rules for Header */\n.header {\n  /* Add specific CSS rules for Header here */\n  height: $header-height;\n  position: sticky;\n  width: 100%;\n  z-index: 9999;\n  top: 0; // TODO: check\n}\n\n/* Rules for HeaderWrapper */\n.header-wrapper {\n  /* Add specific CSS rules for HeaderWrapper here */\n  background: $primary-color;\n  color: $primary-color-complementary;\n  position: relative;\n  z-index: 299;\n}\n\n/* Rules for HeaderContainer */\n.header-container {\n  /* Add specific CSS rules for HeaderContainer here */\n  align-items: center;\n  display: flex;\n  padding: .625rem;\n}\n\n/* Rules for HeaderLeft */\n.header-left {\n  /* Add specific CSS rules for HeaderLeft here */\n  justify-content: flex-start;\n  margin-right: .625rem;\n  position: relative;\n  align-items: center;\n  display: flex;\n  flex: 1 0 0;\n}\n\n/* Rules for HeaderLogo */\n.header-logo {\n  /* Add specific CSS rules for HeaderLogo here */\n}\n\n/* Rules for HeaderRight */\n.header-right {\n  /* Add specific CSS rules for HeaderRight here */\n}\n\n/* Rules for MembershipDropdown */\n.membership-dropdown {\n  /* Add specific CSS rules for MembershipDropdown here */\n}\n\n/* Rules for SiteHeaderBar */\n.site-header-bar {\n  /* Add specific CSS rules for SiteHeaderBar here */\n}","/* _header.scss */\n/* Rules for Header */\n.header {\n  /* Add specific CSS rules for Header here */\n  height: 3.125rem;\n  position: sticky;\n  width: 100%;\n  z-index: 9999;\n  top: 0;\n}\n\n/* Rules for HeaderWrapper */\n.header-wrapper {\n  /* Add specific CSS rules for HeaderWrapper here */\n  background: #C60800;\n  color: #ffffff;\n  position: relative;\n  z-index: 299;\n}\n\n/* Rules for HeaderContainer */\n.header-container {\n  /* Add specific CSS rules for HeaderContainer here */\n  align-items: center;\n  display: flex;\n  padding: 0.625rem;\n}\n\n/* Rules for HeaderLeft */\n.header-left {\n  /* Add specific CSS rules for HeaderLeft here */\n  justify-content: flex-start;\n  margin-right: 0.625rem;\n  position: relative;\n  align-items: center;\n  display: flex;\n  flex: 1 0 0;\n}\n\n/* Rules for HeaderLogo */\n.header-logo {\n  /* Add specific CSS rules for HeaderLogo here */\n}\n\n/* Rules for HeaderRight */\n.header-right {\n  /* Add specific CSS rules for HeaderRight here */\n}\n\n/* Rules for MembershipDropdown */\n.membership-dropdown {\n  /* Add specific CSS rules for MembershipDropdown here */\n}\n\n/* Rules for SiteHeaderBar */\n.site-header-bar {\n  /* Add specific CSS rules for SiteHeaderBar here */\n}\n\n/* _footer.scss */\n/* Rules for Footer */\n.footer {\n  /* Add specific CSS rules for Footer here */\n}\n\n/* Rules for FooterWrapper */\n.footer-wrapper {\n  /* Add specific CSS rules for FooterWrapper here */\n}\n\n/* Rules for FooterTop */\n.footer-top {\n  /* Add specific CSS rules for FooterTop here */\n}\n\n/* Rules for FooterLogo */\n.footer-logo {\n  /* Add specific CSS rules for FooterLogo here */\n}\n\n/* Rules for FooterSocial */\n.footer-social {\n  /* Add specific CSS rules for FooterSocial here */\n}\n\n/* Rules for FooterMain */\n.footer-main {\n  /* Add specific CSS rules for FooterMain here */\n}\n\n/* Rules for FooterLegal */\n.footer-legal {\n  /* Add specific CSS rules for FooterLegal here */\n}\n\n/* _extra.scss */\n/* Rules for BackgroundSlider */\n.background-slider {\n  /* Add specific CSS rules for BackgroundSlider here */\n}","/* _footer.scss */\n\n/* Rules for Footer */\n.footer {\n  /* Add specific CSS rules for Footer here */\n}\n\n/* Rules for FooterWrapper */\n.footer-wrapper {\n  /* Add specific CSS rules for FooterWrapper here */\n}\n\n/* Rules for FooterTop */\n.footer-top {\n  /* Add specific CSS rules for FooterTop here */\n}\n\n/* Rules for FooterLogo */\n.footer-logo {\n  /* Add specific CSS rules for FooterLogo here */\n}\n\n/* Rules for FooterSocial */\n.footer-social {\n  /* Add specific CSS rules for FooterSocial here */\n}\n\n/* Rules for FooterMain */\n.footer-main {\n  /* Add specific CSS rules for FooterMain here */\n}\n\n/* Rules for FooterLegal */\n.footer-legal {\n  /* Add specific CSS rules for FooterLegal here */\n}","/* _extra.scss */\n\n/* Rules for BackgroundSlider */\n.background-slider {\n  /* Add specific CSS rules for BackgroundSlider here */\n}"],"sourceRoot":""}]);
+.site-header__nav {
+  position: absolute;
+  transform: translateX(-500%);
+  visibility: hidden;
+}
+
+.site-header__nav-inner {
+  background: var(--wp--preset--color--white);
+  border-radius: 3px;
+  border-top-width: 1px;
+  border: 1px solid var(--wp--preset--color--gray-b);
+  border-top: 0 solid var(--wp--preset--color--gray-b);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  color: var(--wp--preset--color--black);
+  max-height: calc(100dvh - 3.125rem - var(--wp-admin--admin-bar--height, 0px));
+  overflow-y: auto;
+  padding-bottom: 1.25rem;
+}
+
+.header-nav {
+  border-bottom: 1px solid var(--wp--preset--color--gray-b);
+  margin: 0 0 1.25rem;
+  overflow-x: hidden;
+  padding: 0.625rem 0;
+}
+
+ol, ul {
+  box-sizing: border-box;
+}
+
+blockquote, hr, ol, p, ul {
+  margin-bottom: var(--typography--margin-bottom);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+.header-nav .menu-item-has-children:has(.sub-menu-toggle) {
+  position: relative;
+}
+
+.header-nav li {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.13;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+.header-nav .menu-item-has-children:has(.sub-menu-toggle) > a {
+  padding-right: 2.125rem;
+}
+
+.header-nav a {
+  border: 2px solid transparent;
+  color: var(--wp--preset--color--black);
+  display: block;
+  padding: 0.5625rem 1.25rem 0.4375rem;
+  position: relative;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: inherit;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header-nav .menu-item-has-children:has(.sub-menu-toggle) .sub-menu-toggle {
+  background-color: transparent;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 0.625rem 0.4375rem;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.0625rem;
+  outline: none;
+  overflow: visible;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  width: 3.375rem;
+}
+
+#membership-login-container {
+  text-align: center;
+}
+
+.site-header__email, .site-header__search-toggle {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.site-header__search-toggle {
+  /*background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='24' aria-hidden='true' tabindex='-1'%3E%3Cpath fill='%23FFF' d='m21.568 24-7.348-7.344a9.218 9.218 0 1 1 1.54-1.325L23 22.569 21.569 24zM9.116 2.025a7.087 7.087 0 1 0 7.091 7.087 7.1 7.1 0 0 0-7.091-7.087z' data-name='Search Icon'/%3E%3C/svg%3E);
+  */
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.site-header__email, .site-header__search-toggle {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  margin-left: 1.25rem;
+  outline: none;
+  overflow: visible;
+  text-decoration: none;
+}
+
+.site-header__email {
+  display: none;
+}
+
+.site-header__logo {
+  align-items: center;
+  display: flex;
+}
+
+@media (min-width: 37.5rem) {
+  .site-header__right {
+    margin-left: 0;
+  }
+}
+.site-header__right {
+  justify-content: flex-end;
+  margin-left: 0.625rem;
+}
+
+.site-header__left, .site-header__right {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+}
+
+.site-header__logo > a {
+  display: block;
+}
+
+@media (min-width: 30rem) {
+  .site-header__logo svg, .site-header__logo > a {
+    height: 2rem;
+  }
+}
+.site-header__logo svg, .site-header__logo > a {
+  height: 1.875rem;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header .site-header-cta {
+  display: none;
+}
+
+.site-header .site-header-cta a {
+  display: block;
+  max-height: 2.5rem;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: inherit;
+}
+
+.button--login, .entry-content .button--login {
+  align-items: center;
+  border: 1px solid var(--wp--preset--color--white);
+  color: var(--wp--preset--color--white);
+  display: flex;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  padding: 0.25rem 0.375rem 0.1875rem;
+  visibility: visible;
+  white-space: nowrap;
+}
+
+.button--login, .entry-content .button--login {
+  height: 1.75rem;
+  visibility: hidden;
+  width: 5.3125rem;
+}
+
+.button, .entry-content .button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 700;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#membership-dropdown-wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}`, "",{"version":3,"sources":["webpack://./src/style/style.scss"],"names":[],"mappings":"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","sourcesContent":["// Import SCSS files for components\n/* TODO: uncomment the following lines when implemented\n@import 'header';\n@import 'footer';\n@import 'maincontent';\n@import 'extra';\n*/\n\n// Other imports, if needed\n\n// temporary implementation\n\n@import \"_style.css\";\n\nelement.style {\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .headroom, .headroom .site-header__wrapper {\n    transition: transform .2s linear;\n    will-change: transform;\n  }\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .site-header {\n    top: 0;\n  }\n}\n\n.site-header {\n  height: var(--site-header--height);\n  position: sticky;\n  top: var(--wp-admin--admin-bar--height, 0);\n  width: 100%;\n  z-index: 9999;\n}\n\narticle, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {\n  display: block;\n}\n\na, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {\n  border: 0;\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  vertical-align: baseline;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nheader {\n  display: block;\n  unicode-bidi: isolate;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .headroom, .headroom .site-header__wrapper {\n    transition: transform .2s linear;\n    will-change: transform;\n  }\n}\n\n.site-header__wrapper {\n  background: var(--wp--custom--color--brand-primary);\n  color: var(--wp--custom--color--brand-primary-complement);\n  position: relative;\n  z-index: 299;\n}\n\ndiv {\n  display: block;\n  unicode-bidi: isolate;\n}\n\n.site-header__container {\n  align-items: center;\n  display: flex;\n  padding: .625rem;\n}\n\n.site-header__left {\n  justify-content: flex-start;\n  margin-right: .625rem;\n  position: relative;\n}\n\n.site-header__left, .site-header__right {\n  align-items: center;\n  display: flex;\n  flex: 1 0 0;\n}\n\n.menu-toggle {\n  transition: opacity .3s;\n}\n\n.menu-toggle {\n  --menu-toggle-icon-foreground-color: var(--wp--preset--color--white);\n  align-items: center;\n  background-color: transparent;\n  border: none;\n  border: 1px solid var(--wp--preset--color--white);\n  border-radius: 0;\n  border-radius: 2px;\n  cursor: pointer;\n  display: flex;\n  height: 1.875rem;\n  outline: none;\n  overflow: visible;\n  padding: .4375rem;\n  text-decoration: none;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nbutton {\n  appearance: auto;\n  /*\n  font-style: ;\n  font-variant-ligatures: ;\n  font-variant-caps: ;\n  font-variant-numeric: ;\n  font-variant-east-asian: ;\n  font-variant-alternates: ;\n  font-variant-position: ;\n  font-weight: ;\n  font-stretch: ;\n  font-size: ;\n  font-family: ;\n  font-optical-sizing: ;\n  font-kerning: ;\n  font-feature-settings: ;\n  font-variation-settings: ;\n   */\n  text-rendering: auto;\n  color: buttontext;\n  letter-spacing: normal;\n  word-spacing: normal;\n  line-height: normal;\n  text-transform: none;\n  text-indent: 0px;\n  text-shadow: none;\n  display: inline-block;\n  text-align: center;\n  align-items: flex-start;\n  cursor: default;\n  box-sizing: border-box;\n  background-color: buttonface;\n  margin: 0em;\n  padding-block: 1px;\n  padding-inline: 6px;\n  border-width: 2px;\n  border-style: outset;\n  border-color: buttonborder;\n  border-image: initial;\n}\n\n.screen-reader-text {\n  clip: rect(1px, 1px, 1px, 1px);\n  word-wrap: normal !important;\n  border: 0;\n  -webkit-clip-path: inset(50%);\n  clip-path: inset(50%);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n}\n\n.screen-reader-text {\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n}\n\n.menu-toggle__icon, .menu-toggle__icon:after, .menu-toggle__icon:before {\n  transition: background-color .2s ease-in-out;\n}\n\n.menu-toggle__icon, .menu-toggle__icon:after, .menu-toggle__icon:before {\n  background-color: var(--menu-toggle-icon-foreground-color);\n  display: block;\n  height: .125rem;\n  width: 1rem;\n}\n\n.menu-toggle {\n  --menu-toggle-icon-foreground-color: var(--wp--preset--color--white);\n  align-items: center;\n  background-color: transparent;\n  border: none;\n  border: 1px solid var(--wp--preset--color--white);\n  border-radius: 0;\n  border-radius: 2px;\n  cursor: pointer;\n  display: flex;\n  height: 1.875rem;\n  outline: none;\n  overflow: visible;\n  padding: .4375rem;\n  text-decoration: none;\n}\n\n.menu-toggle__title {\n  display: none;\n}\n\n.site-header__nav {\n  left: -.8125rem;\n  top: 2.5rem;\n  width: 100vw;\n  will-change: transform, visibility;\n  z-index: 3;\n}\n\n.site-header__nav {\n  position: absolute;\n  transform: translateX(-500%);\n  visibility: hidden;\n}\n\n.site-header__nav-inner {\n  background: var(--wp--preset--color--white);\n  border-radius: 3px;\n  border-top-width: 1px;\n  border: 1px solid var(--wp--preset--color--gray-b);\n  border-top: 0 solid var(--wp--preset--color--gray-b);\n  box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);\n  color: var(--wp--preset--color--black);\n  max-height: calc(100dvh - 3.125rem - var(--wp-admin--admin-bar--height, 0px));\n  overflow-y: auto;\n  padding-bottom: 1.25rem;\n}\n\n.header-nav {\n  border-bottom: 1px solid var(--wp--preset--color--gray-b);\n  margin: 0 0 1.25rem;\n  overflow-x: hidden;\n  padding: .625rem 0;\n}\n\nol, ul {\n  box-sizing: border-box;\n}\n\nblockquote, hr, ol, p, ul {\n  margin-bottom: var(--typography--margin-bottom);\n}\n\nol, ul {\n  list-style: none;\n}\n\nul {\n  display: block;\n  list-style-type: disc;\n  margin-block-start: 1em;\n  margin-block-end: 1em;\n  margin-inline-start: 0px;\n  margin-inline-end: 0px;\n  padding-inline-start: 40px;\n  unicode-bidi: isolate;\n}\n\n.header-nav .menu-item-has-children:has(.sub-menu-toggle) {\n  position: relative;\n}\n\n.header-nav li {\n  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;\n  font-size: .9375rem;\n  font-weight: 700;\n  letter-spacing: -.03em;\n  line-height: 1.13;\n}\n\nli {\n  display: list-item;\n  text-align: -webkit-match-parent;\n  unicode-bidi: isolate;\n}\n\n.header-nav .menu-item-has-children:has(.sub-menu-toggle)>a {\n  padding-right: 2.125rem;\n}\n\n.header-nav a {\n  border: 2px solid transparent;\n  color: var(--wp--preset--color--black);\n  display: block;\n  padding: .5625rem 1.25rem .4375rem;\n  position: relative;\n}\n\na:where(:not(.wp-element-button)) {\n  text-decoration: inherit;\n}\n\na:-webkit-any-link {\n  color: -webkit-link;\n  cursor: pointer;\n  text-decoration: underline;\n}\n\n.header-nav .menu-item-has-children:has(.sub-menu-toggle) .sub-menu-toggle {\n  background-color: transparent;\n  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjNTg1ODU4IiBkPSJNNiA0Ljg5IDEuNDYyLjI1N2EuODQyLjg0MiAwIDAgMC0xLjIxMSAwIC44OTIuODkyIDAgMCAwIDAgMS4yNDNsNS4xNCA1LjI0NWEuODQ0Ljg0NCAwIDAgMCAxLjE4My4wMjZMMTEuNzUgMS41YS44OTMuODkzIDAgMCAwIDAtMS4yMzkuODQyLjg0MiAwIDAgMC0xLjIxMSAwWiIvPjwvc3ZnPg==);\n  background-position: 50%;\n  background-repeat: no-repeat;\n  background-size: .625rem .4375rem;\n  border: none;\n  border-radius: 0;\n  cursor: pointer;\n  display: inline-block;\n  height: 2.0625rem;\n  outline: none;\n  overflow: visible;\n  position: absolute;\n  right: 0;\n  text-decoration: none;\n  top: 0;\n  width: 3.375rem;\n}\n\n#membership-login-container {\n  text-align: center;\n}\n\n.site-header__email, .site-header__search-toggle {\n  transition: opacity .2s ease-in-out;\n}\n\n.site-header__search-toggle {\n  /*background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='24' aria-hidden='true' tabindex='-1'%3E%3Cpath fill='%23FFF' d='m21.568 24-7.348-7.344a9.218 9.218 0 1 1 1.54-1.325L23 22.569 21.569 24zM9.116 2.025a7.087 7.087 0 1 0 7.091 7.087 7.1 7.1 0 0 0-7.091-7.087z' data-name='Search Icon'/%3E%3C/svg%3E);\n  */\n  background-position: 50%;\n  background-repeat: no-repeat;\n  height: 1.875rem;\n  width: 1.875rem;\n}\n\n.site-header__email, .site-header__search-toggle {\n  background-color: transparent;\n  border: none;\n  border-radius: 0;\n  cursor: pointer;\n  margin-left: 1.25rem;\n  outline: none;\n  overflow: visible;\n  text-decoration: none;\n}\n\n.site-header__email {\n  display: none;\n}\n\n.site-header__logo {\n  align-items: center;\n  display: flex;\n}\n\n@media (min-width: 37.5rem) {\n  .site-header__right {\n    margin-left: 0;\n  }\n}\n\n.site-header__right {\n  justify-content: flex-end;\n  margin-left: .625rem;\n}\n\n.site-header__left, .site-header__right {\n  align-items: center;\n  display: flex;\n  flex: 1 0 0;\n}\n\n.site-header__logo>a {\n  display: block;\n}\n\n@media (min-width: 30rem) {\n  .site-header__logo svg, .site-header__logo > a {\n    height: 2rem;\n  }\n}\n\n.site-header__logo svg, .site-header__logo>a {\n  height: 1.875rem;\n}\n\na:where(:not(.wp-element-button)) {\n  text-decoration: inherit;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\n.site-header .site-header-cta {\n  display: none;\n}\n\n.site-header .site-header-cta a {\n  display: block;\n  max-height: 2.5rem;\n}\n\na:where(:not(.wp-element-button)) {\n  text-decoration: inherit;\n}\n\n.button--login, .entry-content .button--login {\n  align-items: center;\n  border: 1px solid var(--wp--preset--color--white);\n  color: var(--wp--preset--color--white);\n  display: flex;\n  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;\n  font-size: 1rem;\n  font-weight: 700;\n  justify-content: center;\n  padding: .25rem .375rem .1875rem;\n  visibility: visible;\n  white-space: nowrap;\n}\n\n.button--login, .entry-content .button--login {\n  height: 1.75rem;\n  visibility: hidden;\n  width: 5.3125rem;\n}\n\n.button, .entry-content .button {\n  background-color: transparent;\n  border: none;\n  border-radius: 0;\n  cursor: pointer;\n  display: inline-block;\n  font-family: neue-haas-grotesk-display, sans-serif;\n  font-weight: 700;\n  outline: none;\n  overflow: visible;\n  padding: 0;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n\n#membership-dropdown-wrapper {\n  margin: 0 auto;\n  position: relative;\n  width: 100%;\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/style/_style.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/style/_style.css ***!
+  \********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* FIXME: this file is temporary */
+
+:root {
+    --wp--preset--font-size--normal: 16px;
+    --wp--preset--font-size--huge: 42px;
+}
+
+html {
+    font-size: 16px;
+    overflow: auto;
+}
+
+body {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+body {
+    margin: 0;
+}
+
+body {
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--color--nyp-brand: #C60800;
+    --wp--preset--color--nyp-brand-secondary: #FFD62B;
+    --wp--preset--color--p-6-brand: #F7CB00;
+    --wp--preset--color--p-6-brand-secondary: #E13131;
+    --wp--preset--color--decider-brand: #E80100;
+    --wp--preset--color--decider-brand-secondary: #FF3600;
+    --wp--preset--color--gray-a: #F6F6F6;
+    --wp--preset--color--gray-b: #CCCCCC;
+    --wp--preset--color--gray-c: #949494;
+    --wp--preset--color--gray-d: #757677;
+    --wp--preset--color--gray-e: #585858;
+    --wp--preset--color--gray-f: #3C3C3C;
+    --wp--preset--color--gray-g: #2A2A2A;
+    --wp--preset--color--gray-h: #1E1E1E;
+    --wp--preset--color--highlight: #FEF553;
+    --wp--preset--color--success: #25661F;
+    --wp--preset--color--error: #930600;
+    --wp--preset--color--red-light: #E5908B;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--font-family--nyp-brand: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    --wp--preset--font-family--p-6-brand: 'proxima-nova', sans-serif;
+    --wp--preset--font-family--decider-brand: 'canada-type-gibson', sans-serif;
+    --wp--preset--font-family--futura-pt: 'futura-pt', sans-serif;
+    --wp--preset--font-family--neue-haas: 'neue-haas-grotesk-display', sans-serif;
+    --wp--preset--font-family--code-font: 'Menlo', 'Consolas', 'Monaco', monospace;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    --wp--custom--color--link: var(--wp--preset--color--nyp-brand);
+    --wp--custom--color--text: var(--wp--preset--color--gray-f);
+    --wp--custom--color--brand-primary: var(--wp--preset--color--nyp-brand);
+    --wp--custom--color--brand-primary-complement: var(--wp--preset--color--white);
+    --wp--custom--color--brand-secondary: var(--wp--preset--color--nyp-brand);
+    --wp--custom--color--brand-secondary-complement: var(--wp--preset--color--white);
+    --wp--custom--color--brand-accent: var(--wp--preset--color--nyp-brand);
+    --wp--custom--color--brand-red: var(--wp--preset--color--nyp-brand);
+    --wp--custom--color--brand-yellow: var(--wp--preset--color--nyp-brand-secondary);
+    --wp--custom--color--link-on-dark: var(--wp--preset--color--red-light);
+    --wp--custom--font--default: var(--wp--preset--font-family--nyp-brand);
+}
+
+body, html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: var(--wp--preset--color--gray-e);
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+
+body {
+    font-size: 1rem;
+}
+
+@media (min-width: 37.5rem) {
+    body {
+        --recirc-bar--height: 6.9375rem;
+    }
+}
+
+body {
+    --site-header--height--core: 3.125rem;
+    --site-header--height--container: 3.125rem;
+    --site-header--height--offset: 0px;
+    --site-header--height: var(--site-header--height--core);
+    --site-header--height--visible: calc(var(--site-header--height) - var(--site-header--height--offset));
+    --section-subnav--height: 2.5rem;
+    --section-subnav--height--scrollbar: calc(var(--section-subnav--height) + 0.938rem);
+    --recirc-bar--height: 6.25rem;
+    --sports-plus--cta--height: 3.4375rem;
+    --sports-plus--promo--height: 6rem;
+    --typography--margin-bottom: 1rem;
+}
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}`, "",{"version":3,"sources":["webpack://./src/style/_style.css"],"names":[],"mappings":"AAAA,kCAAkC;;AAElC;IACI,qCAAqC;IACrC,mCAAmC;AACvC;;AAEA;IACI,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,gBAAgB;IAChB,kBAAkB;IAClB,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA;IACI,SAAS;AACb;;AAEA;IACI,mCAAmC;IACnC,8CAA8C;IAC9C,mCAAmC;IACnC,uCAAuC;IACvC,uCAAuC;IACvC,mDAAmD;IACnD,kDAAkD;IAClD,8CAA8C;IAC9C,8CAA8C;IAC9C,4CAA4C;IAC5C,6CAA6C;IAC7C,0CAA0C;IAC1C,uCAAuC;IACvC,iDAAiD;IACjD,uCAAuC;IACvC,iDAAiD;IACjD,2CAA2C;IAC3C,qDAAqD;IACrD,oCAAoC;IACpC,oCAAoC;IACpC,oCAAoC;IACpC,oCAAoC;IACpC,oCAAoC;IACpC,oCAAoC;IACpC,oCAAoC;IACpC,oCAAoC;IACpC,uCAAuC;IACvC,qCAAqC;IACrC,mCAAmC;IACnC,uCAAuC;IACvC,iIAAiI;IACjI,mIAAmI;IACnI,kJAAkJ;IAClJ,mIAAmI;IACnI,oIAAoI;IACpI,iNAAiN;IACjN,mHAAmH;IACnH,kIAAkI;IAClI,mIAAmI;IACnI,kIAAkI;IAClI,+GAA+G;IAC/G,oGAAoG;IACpG,oCAAoC;IACpC,qCAAqC;IACrC,oCAAoC;IACpC,sCAAsC;IACtC,oFAAoF;IACpF,gEAAgE;IAChE,0EAA0E;IAC1E,6DAA6D;IAC7D,6EAA6E;IAC7E,8EAA8E;IAC9E,kCAAkC;IAClC,kCAAkC;IAClC,+BAA+B;IAC/B,iCAAiC;IACjC,kCAAkC;IAClC,kCAAkC;IAClC,kCAAkC;IAClC,6DAA6D;IAC7D,6DAA6D;IAC7D,2DAA2D;IAC3D,iGAAiG;IACjG,yDAAyD;IACzD,8DAA8D;IAC9D,2DAA2D;IAC3D,uEAAuE;IACvE,8EAA8E;IAC9E,yEAAyE;IACzE,gFAAgF;IAChF,sEAAsE;IACtE,mEAAmE;IACnE,gFAAgF;IAChF,sEAAsE;IACtE,sEAAsE;AAC1E;;AAEA;IACI,kCAAkC;IAClC,mCAAmC;IACnC,uCAAuC;IACvC,yDAAyD;IACzD,gBAAgB;AACpB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI;QACI,+BAA+B;IACnC;AACJ;;AAEA;IACI,qCAAqC;IACrC,0CAA0C;IAC1C,kCAAkC;IAClC,uDAAuD;IACvD,qGAAqG;IACrG,gCAAgC;IAChC,mFAAmF;IACnF,6BAA6B;IAC7B,qCAAqC;IACrC,kCAAkC;IAClC,iCAAiC;AACrC;;;AAGA;IACI,SAAS;IACT,sBAAsB;IACtB,SAAS;IACT,UAAU;IACV,wBAAwB;AAC5B;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,cAAc;IACd,WAAW;AACf","sourcesContent":["/* FIXME: this file is temporary */\n\n:root {\n    --wp--preset--font-size--normal: 16px;\n    --wp--preset--font-size--huge: 42px;\n}\n\nhtml {\n    font-size: 16px;\n    overflow: auto;\n}\n\nbody {\n    padding-top: 0px;\n    padding-right: 0px;\n    padding-bottom: 0px;\n    padding-left: 0px;\n}\n\nbody {\n    margin: 0;\n}\n\nbody {\n    --wp--preset--color--black: #000000;\n    --wp--preset--color--cyan-bluish-gray: #abb8c3;\n    --wp--preset--color--white: #ffffff;\n    --wp--preset--color--pale-pink: #f78da7;\n    --wp--preset--color--vivid-red: #cf2e2e;\n    --wp--preset--color--luminous-vivid-orange: #ff6900;\n    --wp--preset--color--luminous-vivid-amber: #fcb900;\n    --wp--preset--color--light-green-cyan: #7bdcb5;\n    --wp--preset--color--vivid-green-cyan: #00d084;\n    --wp--preset--color--pale-cyan-blue: #8ed1fc;\n    --wp--preset--color--vivid-cyan-blue: #0693e3;\n    --wp--preset--color--vivid-purple: #9b51e0;\n    --wp--preset--color--nyp-brand: #C60800;\n    --wp--preset--color--nyp-brand-secondary: #FFD62B;\n    --wp--preset--color--p-6-brand: #F7CB00;\n    --wp--preset--color--p-6-brand-secondary: #E13131;\n    --wp--preset--color--decider-brand: #E80100;\n    --wp--preset--color--decider-brand-secondary: #FF3600;\n    --wp--preset--color--gray-a: #F6F6F6;\n    --wp--preset--color--gray-b: #CCCCCC;\n    --wp--preset--color--gray-c: #949494;\n    --wp--preset--color--gray-d: #757677;\n    --wp--preset--color--gray-e: #585858;\n    --wp--preset--color--gray-f: #3C3C3C;\n    --wp--preset--color--gray-g: #2A2A2A;\n    --wp--preset--color--gray-h: #1E1E1E;\n    --wp--preset--color--highlight: #FEF553;\n    --wp--preset--color--success: #25661F;\n    --wp--preset--color--error: #930600;\n    --wp--preset--color--red-light: #E5908B;\n    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);\n    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);\n    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);\n    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);\n    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);\n    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);\n    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);\n    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);\n    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);\n    --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);\n    --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);\n    --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);\n    --wp--preset--font-size--small: 13px;\n    --wp--preset--font-size--medium: 20px;\n    --wp--preset--font-size--large: 36px;\n    --wp--preset--font-size--x-large: 42px;\n    --wp--preset--font-family--nyp-brand: Arial, 'Helvetica Neue', Helvetica, sans-serif;\n    --wp--preset--font-family--p-6-brand: 'proxima-nova', sans-serif;\n    --wp--preset--font-family--decider-brand: 'canada-type-gibson', sans-serif;\n    --wp--preset--font-family--futura-pt: 'futura-pt', sans-serif;\n    --wp--preset--font-family--neue-haas: 'neue-haas-grotesk-display', sans-serif;\n    --wp--preset--font-family--code-font: 'Menlo', 'Consolas', 'Monaco', monospace;\n    --wp--preset--spacing--20: 0.44rem;\n    --wp--preset--spacing--30: 0.67rem;\n    --wp--preset--spacing--40: 1rem;\n    --wp--preset--spacing--50: 1.5rem;\n    --wp--preset--spacing--60: 2.25rem;\n    --wp--preset--spacing--70: 3.38rem;\n    --wp--preset--spacing--80: 5.06rem;\n    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);\n    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);\n    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);\n    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);\n    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);\n    --wp--custom--color--link: var(--wp--preset--color--nyp-brand);\n    --wp--custom--color--text: var(--wp--preset--color--gray-f);\n    --wp--custom--color--brand-primary: var(--wp--preset--color--nyp-brand);\n    --wp--custom--color--brand-primary-complement: var(--wp--preset--color--white);\n    --wp--custom--color--brand-secondary: var(--wp--preset--color--nyp-brand);\n    --wp--custom--color--brand-secondary-complement: var(--wp--preset--color--white);\n    --wp--custom--color--brand-accent: var(--wp--preset--color--nyp-brand);\n    --wp--custom--color--brand-red: var(--wp--preset--color--nyp-brand);\n    --wp--custom--color--brand-yellow: var(--wp--preset--color--nyp-brand-secondary);\n    --wp--custom--color--link-on-dark: var(--wp--preset--color--red-light);\n    --wp--custom--font--default: var(--wp--preset--font-family--nyp-brand);\n}\n\nbody, html {\n    -moz-osx-font-smoothing: grayscale;\n    -webkit-font-smoothing: antialiased;\n    color: var(--wp--preset--color--gray-e);\n    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;\n    line-height: 1.3;\n}\n\nbody {\n    font-size: 1rem;\n}\n\n@media (min-width: 37.5rem) {\n    body {\n        --recirc-bar--height: 6.9375rem;\n    }\n}\n\nbody {\n    --site-header--height--core: 3.125rem;\n    --site-header--height--container: 3.125rem;\n    --site-header--height--offset: 0px;\n    --site-header--height: var(--site-header--height--core);\n    --site-header--height--visible: calc(var(--site-header--height) - var(--site-header--height--offset));\n    --section-subnav--height: 2.5rem;\n    --section-subnav--height--scrollbar: calc(var(--section-subnav--height) + 0.938rem);\n    --recirc-bar--height: 6.25rem;\n    --sports-plus--cta--height: 3.4375rem;\n    --sports-plus--promo--height: 6rem;\n    --typography--margin-bottom: 1rem;\n}\n\n\na, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {\n    border: 0;\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n    vertical-align: baseline;\n}\n\n* {\n    box-sizing: border-box;\n}\n\nbody {\n    display: block;\n    margin: 8px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -663,6 +1308,41 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -34381,6 +35061,16 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjNTg1ODU4IiBkPSJNNiA0Ljg5IDEuNDYyLjI1N2EuODQyLjg0MiAwIDAgMC0xLjIxMSAwIC44OTIuODkyIDAgMCAwIDAgMS4yNDNsNS4xNCA1LjI0NWEuODQ0Ljg0NCAwIDAgMCAxLjE4My4wMjZMMTEuNzUgMS41YS44OTMuODkzIDAgMCAwIDAtMS4yMzkuODQyLjg0MiAwIDAgMC0xLjIxMSAwWiIvPjwvc3ZnPg==":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjNTg1ODU4IiBkPSJNNiA0Ljg5IDEuNDYyLjI1N2EuODQyLjg0MiAwIDAgMC0xLjIxMSAwIC44OTIuODkyIDAgMCAwIDAgMS4yNDNsNS4xNCA1LjI0NWEuODQ0Ljg0NCAwIDAgMCAxLjE4My4wMjZMMTEuNzUgMS41YS44OTMuODkzIDAgMCAwIDAtMS4yMzkuODQyLjg0MiAwIDAgMC0xLjIxMSAwWiIvPjwvc3ZnPg== ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjNTg1ODU4IiBkPSJNNiA0Ljg5IDEuNDYyLjI1N2EuODQyLjg0MiAwIDAgMC0xLjIxMSAwIC44OTIuODkyIDAgMCAwIDAgMS4yNDNsNS4xNCA1LjI0NWEuODQ0Ljg0NCAwIDAgMCAxLjE4My4wMjZMMTEuNzUgMS41YS44OTMuODkzIDAgMCAwIDAtMS4yMzkuODQyLjg0MiAwIDAgMC0xLjIxMSAwWiIvPjwvc3ZnPg==";
+
 /***/ })
 
 /******/ 	});
@@ -34411,6 +35101,9 @@ module.exports = styleTagTransform;
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -34462,6 +35155,32 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -34482,6 +35201,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Header */ "./src/components/Header.tsx");
 /* harmony import */ var _components_MainContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/MainContent */ "./src/components/MainContent.tsx");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.tsx");
+/* harmony import */ var _style_style_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./style/style.scss */ "./src/style/style.scss");
 
 
 
@@ -34490,10 +35210,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// styles
+
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_extra_BackgroundSlider__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "page"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_MainContent__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null))));
+  return (
+    /*#__PURE__*/
+    // FIXME: check and change all the ids and classeNames
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_extra_BackgroundSlider__WEBPACK_IMPORTED_MODULE_2__["default"], null), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      id: "page",
+      className: "site"
+    }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_MainContent__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null))))
+  );
 };
 
 // ! not null assertion operator
