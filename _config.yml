@@ -186,6 +186,7 @@ exclude:
   - vendor
   - resources/
   - tools/
+  - _portfolio/templates
 keep_files:
   - .git
   - .svn

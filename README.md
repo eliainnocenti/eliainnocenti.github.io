@@ -1,6 +1,6 @@
 # Personal Website
 
-This repository contains the source code for my personal website, powered by Jekyll & AcademicPages, a fork of Minimal Mistakes. The website is deployed using GitHub Pages.
+This repository contains the source code for my personal website, powered by [`Jekyll`](http://jekyllrb.com) & [`AcademicPages`](https://github.com/academicpages/academicpages.github.io), a fork of [`Minimal Mistakes`](https://github.com/mmistakes/minimal-mistakes). The website is deployed using [`GitHub Pages`](https://pages.github.com).
 
 ## About Me
 
@@ -12,9 +12,8 @@ I am Elia Innocenti, a cybersecurity engineering student at Politecnico di Torin
 
 The portfolio section contains all the projects I have worked on. Each project includes a description and relevant details.
 
-- [Project 1](portfolio/project1.md)
-- [Project 2](portfolio/project2.md)
-- [Project 3](portfolio/project3.md)
+- [SSH-Shell-Attacks](portfolio/SSH-Shell-Attacks.md)
+- [Secure-Timeout-System-NXPS32K3X8EVB](portfolio/Secure-Timeout-System-NXPS32K3X8EVB.md)
 
 ### Curriculum
 
