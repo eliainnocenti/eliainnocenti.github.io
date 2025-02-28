@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Elia Innocenti's Personal Website"
+title: "Personal Website"
 author_profile: true
 redirect_from: 
   - /about/
